@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    font-family: cursive;
+}
+/* ends of body */
+.left{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../images/left.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* ends of left side */
+.right{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.right form {
+height: 48%;
+width:80%;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: space-between;
+}
+.right form label{
+    font-size: larger;
+    font-family:cursive;
+    margin: 0px;
+    align-self: flex-start;
+}
+.right form input{
+    margin: 0px;
+    padding-left:20px;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: rgb(229, 229, 229);
+}
+.right form button{
+    width: 51%;
+    height: 33px;
+    border: 0px;
+    margin-top: 5%;
+    padding-bottom: 2px;
+    font-family: cursive;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+.right form button:hover{
+    background-color: rgb(198, 0, 0);
+    color: white;
+}
+#logo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 200px;
+    height: 200px;
+}
+.right p{
+text-align: center;
+}
+.right p a {
+    color: blue;
+}
+.right p a:hover{
+color: red;
+}
+@media  screen and (orientation:portrait) {
+.left{
+    display: none;
+}
+.right{
+    width: 100%;
+}
+.right form{
+    height: 40%;
+    width: 60%;
+}
+.right form input{
+background-color: rgb(205, 205, 205);
+width: 100%;
+}
+.right form button{
+    width: 72%;
+}
+
+}
+/* ends of right side */
